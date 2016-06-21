@@ -13,9 +13,23 @@ set xlabel "Iterations"
 set ylabel "Loss"
 plot "cube_1_2.log.train" using 1:3 title "concat_train" lt 0 lc rgb "red"
 replot "cube_1_2.log.test" using 1:4 title "concat_test" lc rgb "red"
+replot "cube_1_2_add.log.train" using 1:3 title "concat_train" lt 0 lc rgb "magenta"
+replot "cube_1_2_add.log.test" using 1:4 title "concat_test" lc rgb "magenta"
 replot "cube_1_2_eltwise.log.train" using 1:3 title "eltwise_train" lt 0 lc rgb "blue"
+replot "cube_1_2_eltwise_add.log.test" using 1:4 title "eltwise_test" lc rgb "turquoise"
+replot "cube_1_2_eltwise_add.log.train" using 1:3 title "eltwise_train" lt 0 lc rgb "turquoise"
+#replot "cube_1_2_eltwise_add_2.log.test" using 1:4 title "eltwise_test" lc rgb "cyan"
+#replot "cube_1_2_eltwise_add_2.log.train" using 1:3 title "eltwise_train" lt 0 lc rgb "cyan"
+#replot "cube_1_2_eltwise_add_3.log.test" using 1:4 title "eltwise_test" lc rgb "blue"
+#replot "cube_1_2_eltwise_add_3.log.train" using 1:3 title "eltwise_train" lt 0 lc rgb "blue"
+#replot "cube_1_2_eltwise_add_4.log.test" using 1:4 title "eltwise_test" lc rgb "pink"
+#replot "cube_1_2_eltwise_add_4.log.train" using 1:3 title "eltwise_train" lt 0 lc rgb "pink"
+replot "cube_1_2_eltwise_add_5.log.test" using 1:4 title "eltwise_test" lc rgb "purple"
+replot "cube_1_2_eltwise_add_5.log.train" using 1:3 title "eltwise_train" lt 0 lc rgb "purple"
 set output "graph_cube_1_2_eltwise.png"
 replot "cube_1_2_eltwise.log.test" using 1:4 title "eltwise_test" lc rgb "blue"
+
+
 
 # Training loss vs. training time
 # plot "mnist.log.train" using 2:3 title "mnist"
