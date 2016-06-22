@@ -491,7 +491,7 @@ layer {
     decay_mult: 1
   }
   convolution_param {
-    num_output: 64
+    num_output: 128
     pad: 1
     kernel_size: 3
     stride: 1
@@ -542,7 +542,7 @@ layer {
     decay_mult: 1
   }
   convolution_param {
-    num_output: 64
+    num_output: 128
     pad: 1
     kernel_size: 3
     stride: 1
@@ -743,7 +743,7 @@ layer {
     decay_mult: 1
   }
   convolution_param {
-    num_output: 64
+    num_output: 256
     pad: 1
     kernel_size: 3
     stride: 1
@@ -794,7 +794,7 @@ layer {
     decay_mult: 1
   }
   convolution_param {
-    num_output: 64
+    num_output: 256
     pad: 1
     kernel_size: 3
     stride: 1
